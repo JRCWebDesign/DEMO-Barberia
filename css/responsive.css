@@ -1,0 +1,374 @@
+/* ==========================================================
+   RESPONSIVE.CSS
+========================================================== */
+
+
+/* ==========================================================
+   TABLETS
+========================================================== */
+
+@media (max-width:1024px){
+
+    :root{
+
+        --section-padding:90px;
+
+    }
+
+    h1{
+
+        font-size:3.5rem;
+
+    }
+
+    .hero h1{
+
+        font-size:3.8rem;
+
+    }
+
+    .hero p{
+
+        width:90%;
+
+    }
+
+    .about-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .about ul{
+
+        align-items:center;
+
+    }
+
+    .plans-grid{
+
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .benefits-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .contact-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MÓVILES
+========================================================== */
+
+@media (max-width:768px){
+
+    :root{
+
+        --section-padding:70px;
+
+    }
+
+    header .container{
+
+        height:80px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+        z-index:1001;
+
+    }
+
+    nav{
+
+        position:fixed;
+
+        top:0;
+
+        right:-100%;
+
+        width:300px;
+
+        height:100vh;
+
+        background:var(--dark);
+
+        transition:.4s;
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        box-shadow:-15px 0 30px rgba(0,0,0,.25);
+
+    }
+
+    nav.active{
+
+        right:0;
+
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+
+        gap:35px;
+
+        text-align:center;
+
+    }
+
+    .nav-links a{
+
+        font-size:1.2rem;
+
+    }
+
+    .hero{
+
+        min-height:90vh;
+
+        padding:120px 0;
+
+    }
+
+    .hero h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .btn{
+
+        width:260px;
+
+    }
+
+    .benefits-grid,
+
+    .gallery-grid,
+
+    .plans-grid,
+
+    .testimonials-grid,
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid img{
+
+        height:240px;
+
+    }
+
+    .about img{
+
+        margin-top:40px;
+
+    }
+
+    .promotion h2{
+
+        font-size:2.2rem;
+
+    }
+
+    #countdown{
+
+        gap:12px;
+
+        font-size:1.5rem;
+
+    }
+
+    #countdown div{
+
+        min-width:70px;
+
+        padding:15px;
+
+    }
+
+    .schedule table{
+
+        display:block;
+
+        overflow-x:auto;
+
+    }
+
+    .faq-item h3{
+
+        font-size:1rem;
+
+    }
+
+    footer{
+
+        padding:50px 0;
+
+    }
+
+    #whatsapp-button{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:1.7rem;
+
+        right:20px;
+
+        bottom:20px;
+
+    }
+
+    #backToTop{
+
+        width:50px;
+
+        height:50px;
+
+        right:25px;
+
+        bottom:95px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MÓVILES PEQUEÑOS
+========================================================== */
+
+@media (max-width:480px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .logo{
+
+        font-size:1.5rem;
+
+    }
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .hero p{
+
+        font-size:.95rem;
+
+    }
+
+    .badge{
+
+        font-size:.75rem;
+
+        padding:8px 15px;
+
+    }
+
+    .section-title h2,
+
+    .benefits h2,
+
+    .gallery h2,
+
+    .plans h2,
+
+    .promotion h2,
+
+    .schedule h2,
+
+    .faq h2,
+
+    .contact h2,
+
+    .testimonials h2{
+
+        font-size:2rem;
+
+    }
+
+    .plan{
+
+        padding:35px 25px;
+
+    }
+
+    .price{
+
+        font-size:2.2rem;
+
+    }
+
+    .contact-grid a{
+
+        padding:25px;
+
+    }
+
+    .contact-grid i{
+
+        font-size:2.3rem;
+
+    }
+
+    .social{
+
+        flex-wrap:wrap;
+
+    }
+
+}
